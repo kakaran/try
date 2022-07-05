@@ -9,20 +9,39 @@
 
     <style>
         .contanier {
-            /* display: flex; */
-            /* flex-direction: row; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        }
+        .contanier2
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        .contanier2 #Subtract
+        {
+            margin-left: 10px;
+        }
+        
+        .result
+        {
             border: 1px solid black;
-            justify-content: center;
-            height: 400px;
+            width: 100px;
+            height: 50px;
         }
 
+/* 
         .cont {
 
             width: 300px;
             border: 1px solid red;
             display: flex;
             flex-direction: column;
-        }
+        } */
     </style>
 </head>
 
@@ -40,11 +59,14 @@
         </div> -->
         <!-- <div class="cont">syesgsdyrtysd</div> -->
 
-        <input type="number" id="num1">
-        <input type="number" id="num2">
-        <p class="result" style="border: 1px solid black; width: 100px; height: 50px;"></p>
-        <button id="sum">Sum</button>
-        <button id="Subtract">Subtract</button>
+        Value1 <input type="number" id="num1">
+        Value2 <input type="number" id="num2">
+        Result
+        <p class="result" ></p>
+        <div class="contanier2">
+            <button id="sum">Sum</button>
+            <button id="Subtract">Subtract</button>
+        </div>
     </div>
     <script src="try.js"></script>
 </body>
